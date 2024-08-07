@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NA 广软网络工作站</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="1.js">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">NA17.0</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="./Contact.html" onclick="jump('Contact.html')">加入我们</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="images/stars.png" id="stars">
+    <!-- <img src="images/image.png" id="moon"> -->
+        <div class="container">
+            <!-- 创建一个包含所有环形的容器 -->
+            <div class="ring ring-1"></div>
+            <!-- 第一个环形 -->
+            <div class="ring ring-2"></div>
+            <!-- 第二个环形 -->
+            <div class="ring ring-3"></div>
+            <!-- 第三个环形 -->
+            <div class="ring ring-4"></div>
+            <!-- 第四个环形 -->
+            <div class="ring ring-5-1"></div>
+            <!-- 第五个环形的第一部分 -->
+            <div class="ring ring-5-2"></div>
+            <!-- 第五个环形的第二部分 -->
+            <div class="ring ring-6"></div>
+            <!-- 第六个环形 -->
+            <div class="ring ring-7"></div>
+            <!-- 第七个环形 -->
+            <div class="ring ring-8"></div>
+            <!-- 第八个环形 -->
+            <div class="ring ring-9"></div>
+            <!-- 第九个环形 -->
+          </div>
+    <img src="images/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">NA17.0</h2>
+    <a href="#sec" id="btn">Explore</a>
+    <img src="images/mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+    <h2>关于我们</h2>
+    <p class="department-desc right">
+      连接未来，服务每一位！
+
+      作为学院的技术力量，
+
+      【网络管理工作站】承担着为全院师生提供稳定、高效的网络服务的使命。
+
+      我们不仅仅是技术专家，更是学生的朋友，
+
+      无论你遇到任何网络问题，我们都在这里为你服务。
+
+      为了满足学生的多种需求，我们还为你提供了多种网络服务和工具。
+
+      我们的服务范围包括但不限于：
+
+      导航网、NA音乐网、NA电影网、
+
+      报修平台、资源共享中心、
+
+      专业软件下载库，以及NA服务中心。
+
+      与我们一起，探索数字世界，享受无限可能！
+    </p>
+  </div>
+
+  <div class="main-container">
+    <div class="bar">
+      <ul>
+        <li style="--z:5"><a href="#111" data-target="card1" data-target2="box1">技术部</a></li>
+        <li style="--z:4"><a href="#222" data-target="card2" data-target2="box2">资源部</a></li>
+        <li style="--z:3"><a href="#333" data-target="card3" data-target2="box3">秘书部</a></li>
+        <li style="--z:2"><a href="#444" data-target="card4" data-target2="box4">宣传部</a></li>
+        <li style="--z:1"><a href="#555" data-target="card5" data-target2="box5">外联部</a></li>
+      </ul>
+    </div>
+
+    <!-- ------------------以下是滚动图片 -->
+    <div class="box">
+      <!-- 图片组1 -->
+      <div class="boxes" id="box1"> <!-- 这一行div中不用写display: none，因为默认是显示card1，其他card则要写上display: none -->
+        <div class="face1 face1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="face1 face2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- 图片组2 -->
+      <div class="boxes" id="box2" style="display: none">
+        <div class="face2 face1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="face2 face2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- 图片组3 -->
+      <div class="boxes" id="box3" style="display: none">
+        <div class="face3 face1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="face3 face2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- 图片组4 -->
+      <div class="boxes" id="box4" style="display: none">
+        <div class="face4 face1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="face4 face2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- 图片组5 -->
+      <ddiv class="boxes" id="box5" style="display: none">
+        <div class="face5 face1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="face5 face2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------以下是展开全屏卡片 -->
+    <div class="wrapper">
+      <!-- 卡片1 -->
+      <div class="book" id="card1"> <!-- 这一行div中不用写display: none，因为默认是显示card1，其他card则要写上display: none -->
+        <div class="book__cover">
+          <div class="header-image">
+            <div class="overlay"></div>
+          </div>
+          <div class="title-wrap">
+            <h1 class="article-title">NA 红楼梦</h1>
+          </div>
+          <p class="book__cover-exerpt"> <!--卡片短文简介 -->
+
+            原名《石头记》。长篇小说。一百二十回。前八十回为曹雪芹作，后四十回一般认为是高鹗所续。内容以贾、史、王、薛四大封建家族为背景，以贾宝玉、林黛玉的爱情悲剧为主线，着重描写贾家荣、宁二府由盛到衰的过程，揭露地主阶级贵族集团的荒淫腐朽、互相倾轧，暴露出他们残酷压迫剥削劳动人民的罪恶。歌颂地主阶级中具有叛逆精神的青年和某些奴隶的反抗行为，广泛反映了当时的社会矛盾和阶级斗争，对封建礼教等地主阶级传统思想进行了批判。它是我国十八世纪上半期形象化的历史，是封建社会没落时期社会生活的写照。作品语言优美生动，人物刻画形象逼真，塑造了许多富有典型性格的艺术形象，如贾宝玉、林黛玉、王熙凤、薛宝钗、尤三姐、晴雯等。小说规模宏大，结构严谨，具有高度的思想性和卓越的艺术成就，是我国古典长篇小说中现实主义的高峰。但作品当中也反映了作者为封建制度“补天”的幻想和某些虚无主义思想。后四十回续作，安排以宝玉“中乡魁”，贾家“延世泽”为结局，更削弱了原书的反封建意义。
+            <br><br>
+          </p>
+
+        </div>
+        <div class="book__content"> <!-- 全屏下的长文介绍,drop-cap是首字放大 -->
+          <p><span class="drop-cap">阿</span>阿是防守打法撒酒疯史可法沙发撒立法司法就撒拉卡拉撒电极法
+          </p>
+          <p>
+            此开卷第一回也。作者自云：因曾历过一番梦幻之后，故将真事隐去，而借“通灵”之说，撰此《石头记》一书也。故曰“甄士隐”云云。但书中所记何事何人？自又云：“今风尘碌碌，一事无成，忽念及当日所有之女子，一一细考较去，觉其行止见识，皆出于我之上。何我堂堂须眉，诚不若彼裙钗
+            哉？实愧则有馀，悔又无益之大无可如何之日也！当此，则自欲将以往所赖天恩祖德，锦衣纨绔之时，饫甘餍肥之日，背父兄教育之恩，负师友规谈之德，以至今日一技无成，半生潦倒之罪，编述一集，以告天下人：我之罪固不免，然闺阁中本自历历有人，万不可因我之不肖，自护己短，一并使其泯灭也。虽今日之茅椽蓬牖，瓦灶绳床，其晨夕风露，阶柳庭花，亦未有妨我之襟怀笔墨者。虽我未学，下笔无文，又何妨用假语村言，敷演
+            出一段故事来，亦可使闺阁昭传，复可悦世之目，破人愁闷，不亦宜乎？”故曰“贾雨村”云云。
+          </p>
+          <p>此回中凡用“梦”用“幻”等字，是提醒阅者眼目，亦是此书立意本旨。</p>
+          <p>列位看官：你道此书从何而来？说起根由，虽近荒唐，细按则深有趣味。待在下将此来历注明，方使阅者了然不惑。</p>
+          <p>
+            原来女娲氏炼石补天之时，于大荒山无稽崖炼成高经十二丈、方经二十四丈顽石三万六千五百零一块。娲皇氏只用了三万六千五百块，只单单剩了一块未用，便弃在此山青埂峰下。谁知此石自经煅炼之后，灵性已通，因见众石俱得补天，独自己无材不堪入选，遂自怨自叹，日夜悲号惭愧。
+          </p>
+        </div>
+      </div>
+      <!-- 卡片2 -->
+      <div class="book" id="card2" style="display: none";>
+        <div class="book__cover">
+          <div class="header-image">
+            <div class="overlay"></div>
+          </div>
+          <div class="title-wrap">
+            <h1 class="article-title">NA 绿楼梦</h1>
+          </div>
+          <p class="book__cover-exerpt"> <!--卡片短文简介 -->
+
+            原名《石头记》。长篇小说。一百二十回。前八十回为曹雪芹作，后四十回一般认为是高鹗所续。内容以贾、史、王、薛四大封建家族为背景，以贾宝玉、林黛玉的爱情悲剧为主线，着重描写贾家荣、宁二府由盛到衰的过程，揭露地主阶级贵族集团的荒淫腐朽、互相倾轧，暴露出他们残酷压迫剥削劳动人民的罪恶。歌颂地主阶级中具有叛逆精神的青年和某些奴隶的反抗行为，广泛反映了当时的社会矛盾和阶级斗争，对封建礼教等地主阶级传统思想进行了批判。它是我国十八世纪上半期形象化的历史，是封建社会没落时期社会生活的写照。作品语言优美生动，人物刻画形象逼真，塑造了许多富有典型性格的艺术形象，如贾宝玉、林黛玉、王熙凤、薛宝钗、尤三姐、晴雯等。小说规模宏大，结构严谨，具有高度的思想性和卓越的艺术成就，是我国古典长篇小说中现实主义的高峰。但作品当中也反映了作者为封建制度“补天”的幻想和某些虚无主义思想。后四十回续作，安排以宝玉“中乡魁”，贾家“延世泽”为结局，更削弱了原书的反封建意义。
+            <br><br>
+          </p>
+
+        </div>
+        <div class="book__content"> <!-- 全屏下的长文介绍,drop-cap是首字放大 -->
+          <p><span class="drop-cap">阿</span>阿是防守打法撒酒疯史可法沙发撒立法司法就撒拉卡拉撒电极法
+          </p>
+          <p>
+            此开卷第一回也。作者自云：因曾历过一番梦幻之后，故将真事隐去，而借“通灵”之说，撰此《石头记》一书也。故曰“甄士隐”云云。但书中所记何事何人？自又云：“今风尘碌碌，一事无成，忽念及当日所有之女子，一一细考较去，觉其行止见识，皆出于我之上。何我堂堂须眉，诚不若彼裙钗
+            哉？实愧则有馀，悔又无益之大无可如何之日也！当此，则自欲将以往所赖天恩祖德，锦衣纨绔之时，饫甘餍肥之日，背父兄教育之恩，负师友规谈之德，以至今日一技无成，半生潦倒之罪，编述一集，以告天下人：我之罪固不免，然闺阁中本自历历有人，万不可因我之不肖，自护己短，一并使其泯灭也。虽今日之茅椽蓬牖，瓦灶绳床，其晨夕风露，阶柳庭花，亦未有妨我之襟怀笔墨者。虽我未学，下笔无文，又何妨用假语村言，敷演
+            出一段故事来，亦可使闺阁昭传，复可悦世之目，破人愁闷，不亦宜乎？”故曰“贾雨村”云云。
+          </p>
+          <p>此回中凡用“梦”用“幻”等字，是提醒阅者眼目，亦是此书立意本旨。</p>
+          <p>列位看官：你道此书从何而来？说起根由，虽近荒唐，细按则深有趣味。待在下将此来历注明，方使阅者了然不惑。</p>
+          <p>
+            原来女娲氏炼石补天之时，于大荒山无稽崖炼成高经十二丈、方经二十四丈顽石三万六千五百零一块。娲皇氏只用了三万六千五百块，只单单剩了一块未用，便弃在此山青埂峰下。谁知此石自经煅炼之后，灵性已通，因见众石俱得补天，独自己无材不堪入选，遂自怨自叹，日夜悲号惭愧。
+          </p>
+        </div>
+      </div>
+      <!-- 卡片3 -->
+      <div class="book" id="card3" style="display: none" ;>
+        <div class="book__cover">
+          <div class="header-image">
+            <div class="overlay"></div>
+          </div>
+          <div class="title-wrap">
+            <h1 class="article-title">NA 红楼梦</h1>
+          </div>
+          <p class="book__cover-exerpt"> <!--卡片短文简介 -->
+
+            原名《石头记》。长篇小说。一百二十回。前八十回为曹雪芹作，后四十回一般认为是高鹗所续。内容以贾、史、王、薛四大封建家族为背景，以贾宝玉、林黛玉的爱情悲剧为主线，着重描写贾家荣、宁二府由盛到衰的过程，揭露地主阶级贵族集团的荒淫腐朽、互相倾轧，暴露出他们残酷压迫剥削劳动人民的罪恶。歌颂地主阶级中具有叛逆精神的青年和某些奴隶的反抗行为，广泛反映了当时的社会矛盾和阶级斗争，对封建礼教等地主阶级传统思想进行了批判。它是我国十八世纪上半期形象化的历史，是封建社会没落时期社会生活的写照。作品语言优美生动，人物刻画形象逼真，塑造了许多富有典型性格的艺术形象，如贾宝玉、林黛玉、王熙凤、薛宝钗、尤三姐、晴雯等。小说规模宏大，结构严谨，具有高度的思想性和卓越的艺术成就，是我国古典长篇小说中现实主义的高峰。但作品当中也反映了作者为封建制度“补天”的幻想和某些虚无主义思想。后四十回续作，安排以宝玉“中乡魁”，贾家“延世泽”为结局，更削弱了原书的反封建意义。
+            <br><br>
+          </p>
+
+        </div>
+        <div class="book__content"> <!-- 全屏下的长文介绍,drop-cap是首字放大 -->
+          <p><span class="drop-cap">阿</span>阿是防守打法撒酒疯史可法沙发撒立法司法就撒拉卡拉撒电极法
+          </p>
+          <p>
+            此开卷第一回也。作者自云：因曾历过一番梦幻之后，故将真事隐去，而借“通灵”之说，撰此《石头记》一书也。故曰“甄士隐”云云。但书中所记何事何人？自又云：“今风尘碌碌，一事无成，忽念及当日所有之女子，一一细考较去，觉其行止见识，皆出于我之上。何我堂堂须眉，诚不若彼裙钗
+            哉？实愧则有馀，悔又无益之大无可如何之日也！当此，则自欲将以往所赖天恩祖德，锦衣纨绔之时，饫甘餍肥之日，背父兄教育之恩，负师友规谈之德，以至今日一技无成，半生潦倒之罪，编述一集，以告天下人：我之罪固不免，然闺阁中本自历历有人，万不可因我之不肖，自护己短，一并使其泯灭也。虽今日之茅椽蓬牖，瓦灶绳床，其晨夕风露，阶柳庭花，亦未有妨我之襟怀笔墨者。虽我未学，下笔无文，又何妨用假语村言，敷演
+            出一段故事来，亦可使闺阁昭传，复可悦世之目，破人愁闷，不亦宜乎？”故曰“贾雨村”云云。
+          </p>
+          <p>此回中凡用“梦”用“幻”等字，是提醒阅者眼目，亦是此书立意本旨。</p>
+          <p>列位看官：你道此书从何而来？说起根由，虽近荒唐，细按则深有趣味。待在下将此来历注明，方使阅者了然不惑。</p>
+          <p>
+            原来女娲氏炼石补天之时，于大荒山无稽崖炼成高经十二丈、方经二十四丈顽石三万六千五百零一块。娲皇氏只用了三万六千五百块，只单单剩了一块未用，便弃在此山青埂峰下。谁知此石自经煅炼之后，灵性已通，因见众石俱得补天，独自己无材不堪入选，遂自怨自叹，日夜悲号惭愧。
+          </p>
+        </div>
+      </div>
+      <!-- 卡片4 -->
+      <div class="book" id="card4" style="display: none" ;>
+        <div class="book__cover">
+          <div class="header-image">
+            <div class="overlay"></div>
+          </div>
+          <div class="title-wrap">
+            <h1 class="article-title">NA 红楼梦</h1>
+          </div>
+          <p class="book__cover-exerpt"> <!--卡片短文简介 -->
+
+            原名《石头记》。长篇小说。一百二十回。前八十回为曹雪芹作，后四十回一般认为是高鹗所续。内容以贾、史、王、薛四大封建家族为背景，以贾宝玉、林黛玉的爱情悲剧为主线，着重描写贾家荣、宁二府由盛到衰的过程，揭露地主阶级贵族集团的荒淫腐朽、互相倾轧，暴露出他们残酷压迫剥削劳动人民的罪恶。歌颂地主阶级中具有叛逆精神的青年和某些奴隶的反抗行为，广泛反映了当时的社会矛盾和阶级斗争，对封建礼教等地主阶级传统思想进行了批判。它是我国十八世纪上半期形象化的历史，是封建社会没落时期社会生活的写照。作品语言优美生动，人物刻画形象逼真，塑造了许多富有典型性格的艺术形象，如贾宝玉、林黛玉、王熙凤、薛宝钗、尤三姐、晴雯等。小说规模宏大，结构严谨，具有高度的思想性和卓越的艺术成就，是我国古典长篇小说中现实主义的高峰。但作品当中也反映了作者为封建制度“补天”的幻想和某些虚无主义思想。后四十回续作，安排以宝玉“中乡魁”，贾家“延世泽”为结局，更削弱了原书的反封建意义。
+            <br><br>
+          </p>
+
+        </div>
+        <div class="book__content"> <!-- 全屏下的长文介绍,drop-cap是首字放大 -->
+          <p><span class="drop-cap">阿</span>阿是防守打法撒酒疯史可法沙发撒立法司法就撒拉卡拉撒电极法
+          </p>
+          <p>
+            此开卷第一回也。作者自云：因曾历过一番梦幻之后，故将真事隐去，而借“通灵”之说，撰此《石头记》一书也。故曰“甄士隐”云云。但书中所记何事何人？自又云：“今风尘碌碌，一事无成，忽念及当日所有之女子，一一细考较去，觉其行止见识，皆出于我之上。何我堂堂须眉，诚不若彼裙钗
+            哉？实愧则有馀，悔又无益之大无可如何之日也！当此，则自欲将以往所赖天恩祖德，锦衣纨绔之时，饫甘餍肥之日，背父兄教育之恩，负师友规谈之德，以至今日一技无成，半生潦倒之罪，编述一集，以告天下人：我之罪固不免，然闺阁中本自历历有人，万不可因我之不肖，自护己短，一并使其泯灭也。虽今日之茅椽蓬牖，瓦灶绳床，其晨夕风露，阶柳庭花，亦未有妨我之襟怀笔墨者。虽我未学，下笔无文，又何妨用假语村言，敷演
+            出一段故事来，亦可使闺阁昭传，复可悦世之目，破人愁闷，不亦宜乎？”故曰“贾雨村”云云。
+          </p>
+          <p>此回中凡用“梦”用“幻”等字，是提醒阅者眼目，亦是此书立意本旨。</p>
+          <p>列位看官：你道此书从何而来？说起根由，虽近荒唐，细按则深有趣味。待在下将此来历注明，方使阅者了然不惑。</p>
+          <p>
+            原来女娲氏炼石补天之时，于大荒山无稽崖炼成高经十二丈、方经二十四丈顽石三万六千五百零一块。娲皇氏只用了三万六千五百块，只单单剩了一块未用，便弃在此山青埂峰下。谁知此石自经煅炼之后，灵性已通，因见众石俱得补天，独自己无材不堪入选，遂自怨自叹，日夜悲号惭愧。
+          </p>
+        </div>
+      </div>
+      <!-- 卡片5 -->
+      <div class="book" id="card5" style="display: none" ;>
+        <div class="book__cover">
+          <div class="header-image">
+            <div class="overlay"></div>
+          </div>
+          <div class="title-wrap">
+            <h1 class="article-title">NA 红楼梦</h1>
+          </div>
+          <p class="book__cover-exerpt"> <!--卡片短文简介 -->
+
+            原名《石头记》。长篇小说。一百二十回。前八十回为曹雪芹作，后四十回一般认为是高鹗所续。内容以贾、史、王、薛四大封建家族为背景，以贾宝玉、林黛玉的爱情悲剧为主线，着重描写贾家荣、宁二府由盛到衰的过程，揭露地主阶级贵族集团的荒淫腐朽、互相倾轧，暴露出他们残酷压迫剥削劳动人民的罪恶。歌颂地主阶级中具有叛逆精神的青年和某些奴隶的反抗行为，广泛反映了当时的社会矛盾和阶级斗争，对封建礼教等地主阶级传统思想进行了批判。它是我国十八世纪上半期形象化的历史，是封建社会没落时期社会生活的写照。作品语言优美生动，人物刻画形象逼真，塑造了许多富有典型性格的艺术形象，如贾宝玉、林黛玉、王熙凤、薛宝钗、尤三姐、晴雯等。小说规模宏大，结构严谨，具有高度的思想性和卓越的艺术成就，是我国古典长篇小说中现实主义的高峰。但作品当中也反映了作者为封建制度“补天”的幻想和某些虚无主义思想。后四十回续作，安排以宝玉“中乡魁”，贾家“延世泽”为结局，更削弱了原书的反封建意义。
+            <br><br>
+          </p>
+
+        </div>
+        <div class="book__content"> <!-- 全屏下的长文介绍,drop-cap是首字放大 -->
+          <p><span class="drop-cap">阿</span>阿是防守打法撒酒疯史可法沙发撒立法司法就撒拉卡拉撒电极法
+          </p>
+          <p>
+            此开卷第一回也。作者自云：因曾历过一番梦幻之后，故将真事隐去，而借“通灵”之说，撰此《石头记》一书也。故曰“甄士隐”云云。但书中所记何事何人？自又云：“今风尘碌碌，一事无成，忽念及当日所有之女子，一一细考较去，觉其行止见识，皆出于我之上。何我堂堂须眉，诚不若彼裙钗
+            哉？实愧则有馀，悔又无益之大无可如何之日也！当此，则自欲将以往所赖天恩祖德，锦衣纨绔之时，饫甘餍肥之日，背父兄教育之恩，负师友规谈之德，以至今日一技无成，半生潦倒之罪，编述一集，以告天下人：我之罪固不免，然闺阁中本自历历有人，万不可因我之不肖，自护己短，一并使其泯灭也。虽今日之茅椽蓬牖，瓦灶绳床，其晨夕风露，阶柳庭花，亦未有妨我之襟怀笔墨者。虽我未学，下笔无文，又何妨用假语村言，敷演
+            出一段故事来，亦可使闺阁昭传，复可悦世之目，破人愁闷，不亦宜乎？”故曰“贾雨村”云云。
+          </p>
+          <p>此回中凡用“梦”用“幻”等字，是提醒阅者眼目，亦是此书立意本旨。</p>
+          <p>列位看官：你道此书从何而来？说起根由，虽近荒唐，细按则深有趣味。待在下将此来历注明，方使阅者了然不惑。</p>
+          <p>
+            原来女娲氏炼石补天之时，于大荒山无稽崖炼成高经十二丈、方经二十四丈顽石三万六千五百零一块。娲皇氏只用了三万六千五百块，只单单剩了一块未用，便弃在此山青埂峰下。谁知此石自经煅炼之后，灵性已通，因见众石俱得补天，独自己无材不堪入选，遂自怨自叹，日夜悲号惭愧。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="footer section">
+    <div class="footer__container  grid">
+      <div class="footer__content grid">
+        <div class="footer__data">
+          <h3 class="footer__title">致新生：</h3>
+          <p class="footer__description">有幸在这个秋天遇见你
+            <br /> 欢迎你的加入！
+          </p>
+        </div>
+        <div class="footer__data">
+          <h3 class="footer__subtitle"> About</h3>
+          <ul>
+            <li class="footer__item">
+              <a class="footer__link" href="images/nc.jpg">微信公众号</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="images/zx.jpg">招新咨询群</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#main-content">关于我们</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#apply">加入我们</a>
+            </li>
+
+
+          </ul>
+        </div>
+        <div class="footer__data">
+          <h3 class="footer__subtitle"> Product</h3>
+          <ul>
+            <li class="footer__item">
+              <a class="footer__link" href="http://home.seig.edu.cn/">导航网</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://service.seig.edu.cn/">NA报修网</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="http://navod.scse.com.cn/">NA电影网</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__data">
+          <h3 class="footer__subtitle"> Support</h3>
+          <ul>
+            <li class="footer__item">
+              <a class="footer__link" href="http://mail.seig.edu.cn/">广软邮箱</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://stu.seig.edu.cn/">学生信息管理系统</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://ehall.seig.edu.cn/#/index">网上办事大厅</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__data">
+          <h3 class="footer__subtitle">Web Design</h3>
+          <ul>
+            <li class="footer__TS">
+              <a class="footer__link" href="#TD">技术组</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__rights">
+          <p class="footer__copy">© 2024 网络管理工作站</p>
+          <div class="footer__terms">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 光标跟随 -->
+  <!-- <div class="img"></div> -->
+  <!--下面这一行script是全屏展开卡片的关键，勿删 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind = document.getElementById('mountains_behind')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let mountains_front = document.getElementById('mountains_front')
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px'
+      moon.style.top = value * 1.05 + 'px'
+      mountains_behind.style.top = value * 0.5 + 'px'
+      mountains_front.style.top = value * 0 + 'px'
+      text.style.marginRight = value * 4 + 'px'
+      text.style.marginTop = value * 1.5 + 'px'
+      btn.style.marginTop = value * 1.5 + 'px'
+      header.style.top = value * 0.5 + 'px'
+    })
+
+    // ----------------点击展开全屏卡片函数
+    "use strict";
+
+    $('.book').on('click', function () {
+      $(this).toggleClass('book--expanded');
+      $(this).scrollTop(0); /* 这一行：点开全屏的时候再次点击会缩回卡片，此时如果滚动条不在顶部的话缩回去就是白的。应该点击退出的时候让卡片的文档高度置为0 */
+    });
+
+    // ----------------导航栏选择不同部门介绍的卡片函数
+
+
+
+
+
+    // // 光标跟随
+    // let img = document.querySelector('.img')
+    // // 定义小图片的旋转角度
+    // let deg = 0
+    // // 定义小图片位于网页左侧的位置
+    // let imgx = 0
+    // // 定义小图片位于网页顶部的位置
+    // let imgy = 0
+    // // 定义小图片x轴的位置
+    // let imgl = 0
+    // // 定义小图片y轴的位置
+    // let imgt = 0
+    // // 定义小图片翻转的角度
+    // let y = 0
+    // // 定义一个计数器
+    // let index = 0
+
+    // window.addEventListener('mousemove', function (xyz) {
+    //   // 获取网页左侧距离的图片位置
+    //   imgx = xyz.x - img.offsetLeft - img.clientWidth / 2
+    //   // 多去网页顶部距离图片的位置
+    //   imgy = xyz.y - img.offsetTop - img.clientHeight / 2
+    //   // 套入公式，定义图片的旋转角度
+    //   deg = 360 * Math.atan(imgy / imgx) / (2 * Math.PI)
+    //   // 每当鼠标移动的时候重置index
+    //   index = 0
+    //   // 定义当前鼠标的位置
+    //   let x = event.clientX
+    //   // 当鼠标的x轴大于图片的时候，提普安就要对着鼠标，所以需要将图片翻转过来
+    //   // 否则就不用翻转
+    //   if (img.offsetLeft < x) {
+    //     y = -180
+    //   } else {
+    //     y = 0
+    //   }
+    // })
+    // setInterval(() => {
+    //   // 设置小图片的旋转和翻转
+    //   img.style.transform = "rotateZ(" + deg + "deg) rotateY(" + y + "deg)"
+    //   index++
+    //   // 在这里设置小图片的位置和速度，并判断小图片到达鼠标位置时停止移动
+    //   if (index < 50) {
+    //     imgl += imgx / 50
+    //     imgt += imgy / 50
+    //   }
+    //   img.style.left = imgl + "px"
+    //   img.style.top = imgt + "px"
+    // }, 10)
+  </script>
+</body>
+
+</html>
